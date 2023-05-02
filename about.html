@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behind the Ghost</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,900&display=swap" rel="stylesheet">
+<body>
+
+    <style>
+
+     
+
+       
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #6B7AA1;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .ghost {
+            width: 140px;
+            height: 160px;
+            background-color: #f2f2f2;
+            border-radius: 70px 70px 0 0;
+            position: relative;
+            cursor: pointer;
+            animation: floating 2.3s infinite ease-in-out;
+        }
+
+        @keyframes floating {
+            50% {
+                transform: translateY(30px);
+            }
+        }
+
+        .face {
+            width: 100px;
+            position: absolute;
+            top: 60px;
+            left: calc(50% - 50px);
+            margin-bottom: 14px;
+        }
+
+        .eyes {
+            height: 24px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+
+        .eyes span{
+            width: 24px;
+            height: 24px;
+            background-color: #6B7AA1;
+            border-radius: 50%;
+            transition: .3s linear;
+        }
+
+        .ghost:hover .eyes span {
+            height: 20px;
+        }
+
+        .mouth {
+            width: 40px;
+            height: 20px;
+            background-color: #6B7AA1;
+            margin: auto;
+            border-radius: 0 0 20px 20px;
+            transition: .3s linear;
+        }
+
+        .ghost:hover .mouth {
+            height: 22px;
+        }
+
+        .hands {
+            width: 175px;
+            position: absolute;
+            left: -36.5px;
+            top: 45px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .hands span {
+            width: 20px;
+            height: 30px;
+            background-color: #f2f2f2;
+        }
+
+        .hands span:first-child {
+            border-radius: 20px 0 0 20px;
+        }
+
+        .hands span:last-child {
+            border-radius: 0 20px 20px 0;
+        }
+
+        .feet {
+            position: absolute;
+            width: 140%;
+            left: -20px;
+            bottom: -60px;
+            display: flex;
+        }
+
+        .feet span {
+            flex: 1;
+            height: 20px;
+            background-color: #f2f2f2;
+            border-radius: 0 0 20px 20px;
+
+        }
+
+        .feet span:first-child {
+            border-radius: 0 0 20px 12px;
+        }
+
+        .feet span:last-child {
+            border-radius: 0 0 12px 20px;
+        }
+    </style>
+
+</head>
+<body>
+   
+    <div class="animation">
+    <div class="ghost">
+        <div class="face">
+            <div class="eyes">
+                <span></span><span></span>
+            </div>
+            <div class="mouth">
+            </div>
+
+            <div class="hands">
+                <span></span><span></span>
+            </div>
+
+            <div class="feet">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
