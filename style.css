@@ -1,13 +1,12 @@
 body {
     background-color: #6B7AA1;
-    font-family: 'Exo', sans-serif;
-    
+    font-family: 'Exo', sans-serif; 
 }
 
 .soothe-cover {
     width: 50%;
     margin-left: 25%;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .title-socials {
@@ -16,4 +15,21 @@ body {
 
 a {
     color: #C1CFC0;
+    padding: 2%;
+}
+
+a:hover{
+    color: #E7E0C9;
+    font-size: 1.2em;
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 0.7rem
+}
+
+.player {
+    width: 33.3%;
+    margin-left: 33.3%;
 }
